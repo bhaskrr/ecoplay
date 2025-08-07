@@ -1,0 +1,42 @@
+"use client";
+import { Button } from "@/components/ui/button";
+import { TrendingUp } from "lucide-react";
+
+export const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="animate-float">
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8">
+            <TrendingUp className="w-5 h-5" />
+            <span className="font-medium">Learn Economics Through Gaming</span>
+          </div>
+        </div>
+
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+          Welcome to
+          <span className="block bg-gradient-to-r from-accent to-accent-glow bg-clip-text animate-pulse-glow">
+            Ecoplay
+          </span>
+        </h1>
+
+        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
+          Master economics through immersive gameplay. Progress through
+          challenging levels, unlock new concepts, and build your economic
+          expertise one game at a time.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <Button variant="secondary" size="lg">
+            Start Learning
+          </Button>
+          <Button variant="outline" size="lg">
+            Watch Demo
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
