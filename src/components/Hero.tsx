@@ -4,8 +4,8 @@ import { TrendingUp } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-green-400"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-400 to-green-400">
+      <div className="absolute inset-0 pattern"></div>
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-float">
@@ -15,9 +15,9 @@ export const Hero = () => {
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
           Welcome to
-          <span className="block bg-gradient-to-r from-accent to-accent-glow bg-clip-text animate-pulse-glow">
+          <span className="block text-yellow-400">
             Ecoplay
           </span>
         </h1>
