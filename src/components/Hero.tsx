@@ -6,25 +6,22 @@ import { TrendingUp } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      <div className="absolute inset-0 bg-with-image"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-300 via-yellow-200 to-green-400">
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-float">
-          <div className="inline-flex items-center gap-2 bg-whit text-white backdrop-blur-sm rounded-full px-4 py-2 mb-4">
+          <div className="inline-flex items-center gap-2 bg-black/50 text-white backdrop-blur-sm rounded-full px-4 py-2 mb-4">
             <TrendingUp className="w-5 h-5" />
             <span className="font-medium">Learn Economics Through Gaming</span>
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-bold mb-2 leading-tight">
           Welcome to
-          <span className="block text-yellow-400">
-            Ecoplay
-          </span>
+          <span className="">&nbsp;Ecoplay</span>
         </h1>
 
-        <p className="text-white py-4 text-lg md:text-xl rounded-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-black py-4 text-lg md:text-xl rounded-lg mb-12 max-w-3xl mx-auto leading-relaxed">
           Master economics through immersive gameplay. Progress through
           challenging levels, unlock new concepts, and build your economic
           expertise one game at a time.
@@ -33,7 +30,7 @@ export const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Link href="/game">
-            <Button variant="secondary" size="lg" className="">
+            <Button variant="default" size="lg" className="font-semibold">
               Start Learning
             </Button>
           </Link>
