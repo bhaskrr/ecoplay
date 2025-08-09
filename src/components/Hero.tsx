@@ -30,7 +30,7 @@ export const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Link href="/game">
-            <Button variant="default" size="lg" className="font-semibold">
+            <Button variant="default" size="lg" className="font-semibold hover:-translate-y-2 transition-all duration-400">
               Start Learning
             </Button>
           </Link>
