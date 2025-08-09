@@ -7,7 +7,7 @@ import { TrendingUp } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      <div className="absolute inset-0 pattern"></div>
+      <div className="absolute inset-0 bg-with-image"></div>
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-float">
@@ -33,14 +33,10 @@ export const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Link href="/game">
-            <Button variant="secondary" size="lg">
+            <Button variant="secondary" size="lg" className="">
               Start Learning
             </Button>
           </Link>
-          
-          <Button variant="outline" size="lg">
-            Watch Demo
-          </Button>
         </div>
       </div>
     </section>
