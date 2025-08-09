@@ -1,4 +1,6 @@
 "use client";
+
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { TrendingUp } from "lucide-react";
 
@@ -30,9 +32,12 @@ export const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <Button variant="secondary" size="lg">
-            Start Learning
-          </Button>
+          <Link href="/game">
+            <Button variant="secondary" size="lg">
+              Start Learning
+            </Button>
+          </Link>
+          
           <Button variant="outline" size="lg">
             Watch Demo
           </Button>
