@@ -6,7 +6,7 @@ import { TrendingUp } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-300 via-yellow-200 to-green-400">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br gradient-shift">
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-float">
