@@ -1,9 +1,11 @@
+import { Globe, Sun } from "lucide-react";
+
 export const topics = [
     {
         id: "trade",
         title: "International Trade",
         description: "Learn about tariffs, imports, and exports through real-world scenarios.",
-        icon: "Globe", // lucide-react icon name
+        icon: Globe, // lucide-react icon name
         questions: [
             {
                 id: 1,
@@ -43,7 +45,7 @@ export const topics = [
         id: "energy",
         title: "Energy Policy",
         description: "Decide between renewable energy and fossil fuels.",
-        icon: "Sun", // lucide-react icon name
+        icon: Sun, // lucide-react icon name
         questions: [
             {
                 id: 1,
