@@ -16,6 +16,7 @@ export const TopicCards = () => {
       {topics.map((topic) => (
         <Card key={topic.id}>
           <CardHeader>
+            <topic.icon />
             <CardTitle className="text-xl">{topic.title}</CardTitle>
           </CardHeader>
           <CardContent>
