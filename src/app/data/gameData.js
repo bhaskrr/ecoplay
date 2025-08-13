@@ -1,4 +1,4 @@
-import { Globe, HeartPulse, Leaf, Sun } from "lucide-react";
+import { Cpu, Globe, HeartPulse, Home, Leaf, Sun, Train } from "lucide-react";
 
 export const topics = [
     {
@@ -140,6 +140,126 @@ export const topics = [
                         "text": "No, keep industries untaxed",
                         "effects": { "money": 15, "pollution": 20, "population": 0 },
                         "impactDescription": "Economy grows faster but environment worsens."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "transport",
+        "title": "Transportation Policy",
+        "description": "Decide how people and goods move around efficiently.",
+        "icon": Train,
+        "questions": [
+            {
+                "id": 1,
+                "text": "Invest in high-speed rail between major cities?",
+                "choices": [
+                    {
+                        "text": "Yes, build it",
+                        "effects": { "money": -20, "pollution": -15, "population": 3 },
+                        "impactDescription": "Cuts travel times, reduces pollution."
+                    },
+                    {
+                        "text": "No, stick to roads",
+                        "effects": { "money": 5, "pollution": 10, "population": 0 },
+                        "impactDescription": "Cheaper now, but traffic worsens."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Should public transport be free?",
+                "choices": [
+                    {
+                        "text": "Yes, fully funded",
+                        "effects": { "money": -10, "pollution": -5, "population": 2 },
+                        "impactDescription": "Encourages use but costs the government."
+                    },
+                    {
+                        "text": "No, charge fares",
+                        "effects": { "money": 5, "pollution": 0, "population": 0 },
+                        "impactDescription": "Revenue from fares but fewer people use it."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tech",
+        "title": "Technology & Innovation",
+        "description": "Encourage growth while addressing automation and ethics.",
+        "icon": Cpu,
+        "questions": [
+            {
+                "id": 1,
+                "text": "Should AI be regulated to protect jobs?",
+                "choices": [
+                    {
+                        "text": "Yes, limit AI adoption",
+                        "effects": { "money": -5, "pollution": 0, "population": 3 },
+                        "impactDescription": "Jobs are protected but innovation slows."
+                    },
+                    {
+                        "text": "No, let AI grow freely",
+                        "effects": { "money": 15, "pollution": 0, "population": -2 },
+                        "impactDescription": "Economic growth speeds up but jobs are lost."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Invest in a national quantum computing program?",
+                "choices": [
+                    {
+                        "text": "Yes, invest heavily",
+                        "effects": { "money": -20, "pollution": 0, "population": 2 },
+                        "impactDescription": "Potential long-term breakthroughs but high upfront cost."
+                    },
+                    {
+                        "text": "No, wait for private sector",
+                        "effects": { "money": 0, "pollution": 0, "population": 0 },
+                        "impactDescription": "No risk, but potential to lag behind competitors."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "housing",
+        "title": "Housing & Urban Planning",
+        "description": "Balance affordability, development, and sustainability.",
+        "icon": Home,
+        "questions": [
+            {
+                "id": 1,
+                "text": "Should rent control be introduced in major cities?",
+                "choices": [
+                    {
+                        "text": "Yes, cap rent increases",
+                        "effects": { "money": -5, "pollution": 0, "population": 4 },
+                        "impactDescription": "Makes housing affordable but discourages new development."
+                    },
+                    {
+                        "text": "No, let market decide",
+                        "effects": { "money": 5, "pollution": 0, "population": -2 },
+                        "impactDescription": "Encourages building but rents may rise sharply."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Redevelop old industrial areas into housing?",
+                "choices": [
+                    {
+                        "text": "Yes, convert them",
+                        "effects": { "money": -10, "pollution": -5, "population": 3 },
+                        "impactDescription": "Revitalizes neighborhoods and creates homes."
+                    },
+                    {
+                        "text": "No, keep them industrial",
+                        "effects": { "money": 5, "pollution": 2, "population": 0 },
+                        "impactDescription": "Preserves jobs but misses housing opportunities."
                     }
                 ]
             }
