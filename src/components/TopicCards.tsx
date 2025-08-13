@@ -23,7 +23,7 @@ export const TopicCards = () => {
             <CardDescription>{topic.description}</CardDescription>
           </CardContent>
           <CardFooter >
-            <Button variant="default" size="sm" className="content-end">Start Learning</Button>
+            <Button variant="default" size="sm" className="hover:bg-black/20 hover:text-black">Start Learning</Button>
           </CardFooter>
         </Card>
       ))}
